@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2f043ad-6d74-4f5b-9017-cd950d853903" name="Changes" comment="initialize frontend project with Vite, React, and Tailwind CSS setup">
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" afterDir="false" />
+    <list default="true" id="d2f043ad-6d74-4f5b-9017-cd950d853903" name="Changes" comment="add Dashboard component and update routing in App.jsx">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +110,7 @@
       <workItem from="1776431544784" duration="337000" />
       <workItem from="1776431942873" duration="94000" />
       <workItem from="1776432080200" duration="2269000" />
-      <workItem from="1776435474748" duration="1011000" />
+      <workItem from="1776435474748" duration="2031000" />
     </task>
     <task id="LOCAL-00001" summary="initialize Personal Finance Tracker project with Maven and Spring Boot setup">
       <option name="closed" value="true" />
@@ -131,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776436183934</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add Dashboard component and update routing in App.jsx">
+      <option name="closed" value="true" />
+      <created>1776436746627</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776436746627</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +154,8 @@
     <MESSAGE value="initialize Personal Finance Tracker project with Maven and Spring Boot setup" />
     <MESSAGE value="add UI/UX flow documentation for dashboard, transaction list, reports, categories, and recurring rules" />
     <MESSAGE value="initialize frontend project with Vite, React, and Tailwind CSS setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize frontend project with Vite, React, and Tailwind CSS setup" />
+    <MESSAGE value="add Dashboard component and update routing in App.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Dashboard component and update routing in App.jsx" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
