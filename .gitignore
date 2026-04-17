@@ -13,8 +13,13 @@ Backend/.mvn/wrapper/maven-wrapper.jar
 .springBeans
 .sts4-cache
 
+### Global Ignores ###
+.idea/
+node_modules/
+npm-debug.log
+dist/
+
 ### IntelliJ IDEA ###
-Backend/.idea
 *.iws
 *.iml
 *.ipr
