@@ -46,9 +46,9 @@ export default function Dashboard() {
   return (
     <div className="flex flex-col flex-1 w-full animate-in fade-in slide-in-from-bottom-4 duration-500">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full p-6 md:p-8 gap-4 sm:gap-0 sticky top-0 z-20 bg-[#09090b]/90 backdrop-blur-md border-b border-white/5">
-        <h1 className="text-2xl sm:text-[28px] font-semibold tracking-tight text-white">Dashboard</h1>
-        <div className="flex items-center space-x-3 w-full sm:w-auto">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full p-6 md:p-8 gap-4 sm:gap-0 sticky top-16 z-[90] bg-[#09090b]/90 backdrop-blur-md border-b border-transparent">
+        <h1 className="text-2xl sm:text-[28px] font-semibold tracking-tight text-white animate-in slide-in-from-left-2 fade-in duration-500">Dashboard</h1>
+        <div className="flex items-center space-x-3 w-full sm:w-auto animate-in slide-in-from-right-2 fade-in duration-500" >
           <div className="relative flex-1 sm:flex-none">
             <select className="w-full appearance-none pl-4 pr-10 py-2.5 bg-[#121214] text-sm font-medium text-slate-200 border border-white/5 rounded-xl shadow-none focus:outline-none focus:ring-2 focus:ring-cyan-500/30 cursor-pointer hover:border-white/10 transition-colors">
               <option>April 2026</option>
