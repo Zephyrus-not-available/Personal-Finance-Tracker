@@ -1,10 +1,39 @@
-HELP.md
-target/
-Backend/.mvn/wrapper/maven-wrapper.jar
+# Project .gitignore for Personal Finance Tracker
+# Purpose: ignore build artifacts, IDE files, OS files, secrets, and generated files that should not be committed
+
+# ---- Build outputs ----
+/target/
+**/target/
+**/build/
+/dist/
+
+# Keep specific build outputs under source directories if needed (exceptions preserved from original)
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### STS ###
+# Backend Maven wrapper
+Backend/.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.jar
+
+# Java / Maven
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+.recommended
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Eclipse/STS
 .apt_generated
 .classpath
 .factorypath
@@ -13,26 +42,54 @@ Backend/.mvn/wrapper/maven-wrapper.jar
 .springBeans
 .sts4-cache
 
-### Global Ignores ###
-.idea/
-node_modules/
-npm-debug.log
-dist/
-
-### IntelliJ IDEA ###
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
-/dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# Node / frontend
+node_modules/
+frontend/node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-lock.yaml
+package-lock.json
+pnpm-debug.log
+dist/
+frontend/dist/
+frontend/build/
+
+# Logs, temp files, caches
+*.log
+*.tmp
+*.temp
+*.bak
+.cache/
+.nyc_output/
+coverage/
+coverage-report/
+.surefire-reports/
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Secrets / keys / environment
+.env
+.env.local
+.env.*.local
+secrets.*
+*.jks
+*.keystore
+*.pem
+*.p12
+*.crt
+*.key
+
+# Misc
+# Keep repository docs (e.g., HELP.md) tracked — do not ignore
+
+# End of .gitignore
