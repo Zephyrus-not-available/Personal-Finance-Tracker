@@ -1,21 +1,14 @@
-# Project .gitignore for Personal Finance Tracker
-# Purpose: ignore build artifacts, IDE files, OS files, secrets, and generated files that should not be committed
-
 # ---- Build outputs ----
 /target/
 **/target/
 **/build/
 /dist/
 
-# Keep specific build outputs under source directories if needed (exceptions preserved from original)
+# Keep specific build outputs under source directories if intentionally needed
 !**/src/main/**/target/
 !**/src/test/**/target/
 !**/src/main/**/build/
 !**/src/test/**/build/
-
-# Backend Maven wrapper
-Backend/.mvn/wrapper/maven-wrapper.jar
-.mvn/wrapper/maven-wrapper.jar
 
 # Java / Maven
 *.class
@@ -24,7 +17,6 @@ Backend/.mvn/wrapper/maven-wrapper.jar
 *.ear
 *.nar
 hs_err_pid*
-.recommended
 
 # IDEs
 .idea/
@@ -53,8 +45,6 @@ node_modules/
 frontend/node_modules/
 npm-debug.log
 yarn-error.log
-pnpm-lock.yaml
-package-lock.json
 pnpm-debug.log
 dist/
 frontend/dist/
@@ -88,8 +78,3 @@ secrets.*
 *.p12
 *.crt
 *.key
-
-# Misc
-# Keep repository docs (e.g., HELP.md) tracked — do not ignore
-
-# End of .gitignore
