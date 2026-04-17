@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2f043ad-6d74-4f5b-9017-cd950d853903" name="Changes" comment="add utility functions and update styles for improved UI consistency">
+    <list default="true" id="d2f043ad-6d74-4f5b-9017-cd950d853903" name="Changes" comment="refactor Dashboard and Layout components for improved responsiveness and mobile navigation">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/DashboardHeader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Layout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +107,7 @@
       <workItem from="1776431544784" duration="337000" />
       <workItem from="1776431942873" duration="94000" />
       <workItem from="1776432080200" duration="2269000" />
-      <workItem from="1776435474748" duration="3811000" />
+      <workItem from="1776435474748" duration="4868000" />
     </task>
     <task id="LOCAL-00001" summary="initialize Personal Finance Tracker project with Maven and Spring Boot setup">
       <option name="closed" value="true" />
@@ -155,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776439276469</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor Dashboard and Layout components for improved responsiveness and mobile navigation">
+      <option name="closed" value="true" />
+      <created>1776439918960</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776439918960</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +178,8 @@
     <MESSAGE value="add Dashboard component and update routing in App.jsx" />
     <MESSAGE value="add Tailwind CSS integration and refactor main.jsx for cleaner imports" />
     <MESSAGE value="add utility functions and update styles for improved UI consistency" />
-    <option name="LAST_COMMIT_MESSAGE" value="add utility functions and update styles for improved UI consistency" />
+    <MESSAGE value="refactor Dashboard and Layout components for improved responsiveness and mobile navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor Dashboard and Layout components for improved responsiveness and mobile navigation" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
