@@ -45,31 +45,31 @@ export default function Dashboard() {
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      className="space-y-8 relative"
+      className="space-y-6 sm:space-y-8 relative w-full"
     >
       {/* Background Radial Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-64 bg-cyan-900/10 blur-[100px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full sm:w-3/4 h-64 bg-cyan-900/10 blur-[100px] rounded-full pointer-events-none" />
 
       {/* Header */}
-      <div className="flex items-center justify-between bg-[#09090b]/80 backdrop-blur-xl pb-4 border-b border-white/5 sticky top-0 z-10">
-        <h1 className="text-[28px] font-semibold tracking-tight text-slate-50">Dashboard</h1>
-        <div className="flex items-center space-x-3">
-          <div className="relative">
-            <select className="appearance-none pl-4 pr-10 py-2.5 bg-[#121215] text-sm font-medium text-slate-300 border border-white/10 rounded-xl shadow-none focus:outline-none focus:ring-2 focus:ring-cyan-500/30 cursor-pointer hover:border-white/20 transition-colors">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between bg-[#09090b]/90 backdrop-blur-xl pb-4 pt-2 sm:pt-0 border-b border-white/5 sticky top-0 z-20 gap-4 sm:gap-0">
+        <h1 className="text-2xl sm:text-[28px] font-semibold tracking-tight text-slate-50">Dashboard</h1>
+        <div className="flex items-center space-x-3 w-full sm:w-auto">
+          <div className="relative flex-1 sm:flex-none">
+            <select className="w-full appearance-none pl-4 pr-10 py-2.5 bg-[#121215] text-sm font-medium text-slate-300 border border-white/10 rounded-xl shadow-none focus:outline-none focus:ring-2 focus:ring-cyan-500/30 cursor-pointer hover:border-white/20 transition-colors">
               <option>April 2026</option>
               <option>March 2026</option>
             </select>
             <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500 pointer-events-none" />
           </div>
-          <button className="flex items-center px-4 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-cyan-600 to-cyan-500 rounded-xl shadow-[0_0_15px_rgba(8,145,178,0.3)] hover:shadow-[0_0_20px_rgba(8,145,178,0.5)] hover:from-cyan-500 hover:to-cyan-400 transition-all border border-cyan-400/20">
-            <Plus className="w-[18px] h-[18px] mr-1.5" />
-            New Entry
+          <button className="flex items-center justify-center flex-1 sm:flex-none px-4 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-cyan-600 to-cyan-500 rounded-xl shadow-[0_0_15px_rgba(8,145,178,0.3)] hover:shadow-[0_0_20px_rgba(8,145,178,0.5)] hover:from-cyan-500 hover:to-cyan-400 transition-all border border-cyan-400/20">
+            <Plus className="w-[18px] h-[18px] sm:mr-1.5" />
+            <span className="hidden sm:inline">New Entry</span>
           </button>
         </div>
       </div>
 
       {/* Summary Cards */}
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 w-full">
         {[
           { label: 'Total Income', amount: totalIncome, trend: 'up', icon: ArrowUpRight, colorId: 'emerald', text: 'text-emerald-400', bg: 'bg-emerald-500/10', glow: 'drop-shadow-[0_0_8px_rgba(52,211,153,0.3)]' },
           { label: 'Total Expenses', amount: totalExpenses, trend: 'down', icon: ArrowDownRight, colorId: 'rose', text: 'text-rose-400', bg: 'bg-rose-500/10', glow: 'drop-shadow-[0_0_8px_rgba(244,63,94,0.3)]' },
@@ -107,7 +107,7 @@ export default function Dashboard() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
         {/* Budget Progress (Premium Touch) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
