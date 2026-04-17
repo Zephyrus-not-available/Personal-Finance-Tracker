@@ -1,10 +1,31 @@
-HELP.md
-target/
-Backend/.mvn/wrapper/maven-wrapper.jar
+# ---- Build outputs ----
+/target/
+**/target/
+**/build/
+/dist/
+
+# Keep specific build outputs under source directories if intentionally needed
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### STS ###
+# Java / Maven
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Eclipse/STS
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +34,47 @@ Backend/.mvn/wrapper/maven-wrapper.jar
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-Backend/.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
-/dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# Node / frontend
+node_modules/
+frontend/node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+dist/
+frontend/dist/
+frontend/build/
+
+# Logs, temp files, caches
+*.log
+*.tmp
+*.temp
+*.bak
+.cache/
+.nyc_output/
+coverage/
+coverage-report/
+.surefire-reports/
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Secrets / keys / environment
+.env
+.env.local
+.env.*.local
+secrets.*
+*.jks
+*.keystore
+*.pem
+*.p12
+*.crt
+*.key
